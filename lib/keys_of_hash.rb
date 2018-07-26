@@ -1,9 +1,6 @@
-require 'pry'
-
 class Hash
   def keys_of(*arguments)
     matches = []
-    #binding.pry
     arguments.each do |word|
       self.each do |key, value|
         if word == value
