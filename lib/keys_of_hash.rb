@@ -5,7 +5,6 @@ class Hash
     matches = []
     #binding.pry
     arguments.each do |word|
-      binding.pry
       self.each do |key, value|
         if word == value
           matches << key
