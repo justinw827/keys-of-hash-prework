@@ -3,7 +3,7 @@ require 'pry'
 class Hash
   def keys_of(*arguments)
     matches = []
-    binding.pry
+    #binding.pry
     arguments.each do |word|
       binding.pry
       self.each do |key, value|
