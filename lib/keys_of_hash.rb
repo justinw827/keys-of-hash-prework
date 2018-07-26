@@ -4,6 +4,7 @@ class Hash
   def keys_of(arguments)
     matches = []
     arguments.each do |word|
+      binding.pry
       self.each do |key, value|
         if word == value
           matches << key
