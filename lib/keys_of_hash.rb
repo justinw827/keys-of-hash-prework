@@ -4,5 +4,6 @@ class Hash
     arguments.each do |word|
       matches << self.fetch(word)
     end
+    return matches
   end
 end
