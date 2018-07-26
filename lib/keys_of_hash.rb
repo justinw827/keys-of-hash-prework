@@ -5,7 +5,11 @@ class Hash
     matches = []
     binding.pry
     arguments.each do |word|
-      matches << self.fetch(word)
+      self.each do |key, value|
+        if word == value
+          matches << key
+        end
+      end
     end
     return matches
   end
